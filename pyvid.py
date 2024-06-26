@@ -17,7 +17,7 @@ if "youtube.com" not in videoURL:
 
 yt = YouTube(videoURL, use_oauth=True, allow_oauth_cache=True)
 filename = yt.title.replace(" ", "_").replace("&", "'&'").replace("|","_")
-output_path = r"C:\Users\"  # Specified output directory
+output_path = r"C:\Users"  # Specified output directory
 
 print("YouTube File to download :", yt.title)
 yt.register_on_progress_callback(on_progress)
